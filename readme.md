@@ -33,6 +33,16 @@ terraform -chdir=ece-provision-01-simple plan
 terraform -chdir=ece-provision-01-simple apply  -auto-approve
 ```
 
+
+<br><br/>
+<br><br/>
+> Cleanup resources <br><br/>
+✅ Destroy the  EC2 instance  <br><br/>
+✅ Destroy S3 + DynamoDB Table <br><br/>
+
 ```
 terraform -chdir=ece-provision-01-simple destroy
+```
+```
+terraform -chdir=01-backend-bootstrap destroy
 ```
