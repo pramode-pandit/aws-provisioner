@@ -19,7 +19,7 @@ terraform -chdir=01-backend-bootstrap apply -auto-approve
 <br><br/>
 > Configure Terraform backend (linking to S3 + DynamoDB) - where to store and lock the state. <br><br/>
 ✅ Configures Terraform to provision a EC2 instance <br><br/>
-✅ Configures Terraform to use Bootstrap as a remote backend to store and lock the state
+✅ Configures Terraform to use bootstrap as a remote backend to store and lock the state
 
 <br><br/>
 
