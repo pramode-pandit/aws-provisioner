@@ -32,6 +32,15 @@ resource "aws_instance" "t3_micro_vm" {
   associate_public_ip_address  = true
 
 
+  user_data = <<-EOF
+              #!/bin/bash
+              # Update system packages
+              sudo apt update -y
+              # Install Git and Tree
+              sudo apt-get install -y git wget tree
+              EOF
+
+
   tags = {
     Name = var.instance_name
   }
