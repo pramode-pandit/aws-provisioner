@@ -24,13 +24,13 @@ terraform -chdir=01-backend-bootstrap apply -auto-approve
 <br><br/>
 
 ```
-terraform -chdir=ece-provision-01-simple init
+terraform -chdir=02-ec2-provision-simple init
 ```
 ```
-terraform -chdir=ece-provision-01-simple plan
+terraform -chdir=02-ec2-provision-simple plan
 ```
 ```
-terraform -chdir=ece-provision-01-simple apply  -auto-approve
+terraform -chdir=02-ec2-provision-simple apply  -auto-approve
 ```
 
 
